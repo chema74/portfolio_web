@@ -3,18 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Proyectos de IA aplicada, automatización, formación, análisis documental, comercio internacional y evaluación de riesgos." />
+  <meta name="description" content="Proyectos de IA aplicada, automatización, análisis documental, formación, comercio internacional y evaluación de riesgos." />
   <meta name="author" content="José María" />
   <title>Proyectos | Portfolio IA Aplicada</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-top">
-        <a href="index.html" class="logo">Portfolio IA Aplicada</a>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
-      </div>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">IA</span>
+        <span class="logo-text">Portfolio IA Aplicada</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
       <nav class="main-nav" id="main-nav">
         <ul>
@@ -30,121 +42,202 @@
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">Portfolio profesional</p>
-        <h1>Proyectos de IA aplicada</h1>
-        <p class="lead">
-          Una selección de proyectos orientados a análisis, automatización, documentación,
-          formación, riesgo y apoyo a la toma de decisiones. Este portfolio combina enfoque
-          técnico, utilidad práctica y visión estratégica.
-        </p>
+    <section class="hero hero-projects">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Portfolio profesional</p>
+          <h1>Proyectos de IA aplicada con enfoque real de negocio</h1>
+          <p class="lead">
+            Selección de proyectos orientados a análisis, automatización, documentación,
+            formación, riesgo y apoyo a la toma de decisiones. Cada iniciativa está pensada
+            para mostrar utilidad práctica, visión estratégica y capacidad de ejecución.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#proyectos-destacados" class="btn btn-primary">Ver proyectos</a>
+            <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver GitHub</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <strong>6</strong>
+              <span>líneas de proyecto</span>
+            </div>
+            <div class="metric-card">
+              <strong>4</strong>
+              <span>áreas de especialización</span>
+            </div>
+            <div class="metric-card">
+              <strong>1</strong>
+              <span>portfolio en evolución continua</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="glass-card">
+            <p class="mini-title">Áreas clave</p>
+            <div class="tag-list">
+              <span class="tag">IA aplicada</span>
+              <span class="tag">Automatización documental</span>
+              <span class="tag">Formación y docencia</span>
+              <span class="tag">Comercio internacional</span>
+              <span class="tag">Riesgo país</span>
+              <span class="tag">Compliance</span>
+              <span class="tag">Dashboards</span>
+              <span class="tag">Asistentes especializados</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="container">
-        <div class="section-intro">
-          <h2>Líneas de trabajo</h2>
+        <div class="section-heading">
+          <p class="section-kicker">Visión general</p>
+          <h2>Cómo está organizado el portfolio</h2>
           <p>
-            Los proyectos se organizan en torno a cuatro ejes principales: inteligencia artificial
-            aplicada, automatización documental, formación y docencia, y análisis estratégico para
-            comercio internacional, regulación y riesgo.
+            Los proyectos se articulan en torno a soluciones de inteligencia artificial aplicada,
+            automatización útil, diseño de recursos formativos y análisis para comercio internacional,
+            regulación y evaluación de riesgos.
           </p>
         </div>
 
-        <div class="tag-list">
-          <span class="tag">IA aplicada</span>
-          <span class="tag">Automatización documental</span>
-          <span class="tag">Formación y docencia</span>
-          <span class="tag">Comercio internacional</span>
-          <span class="tag">Riesgo país</span>
-          <span class="tag">Compliance</span>
-          <span class="tag">Dashboards</span>
-          <span class="tag">Asistentes especializados</span>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>IA aplicada</h3>
+            <p>
+              Soluciones orientadas a resolver problemas concretos mediante asistentes,
+              automatización, análisis estructurado y apoyo a decisión.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Formación y docencia</h3>
+            <p>
+              Diseño de materiales, estructuras didácticas y recursos prácticos para enseñar
+              IA aplicada con claridad y utilidad.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Comercio y análisis</h3>
+            <p>
+              Aplicación de IA y análisis estratégico a contextos de internacionalización,
+              evaluación de mercados y lectura de entorno.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Riesgo y regulación</h3>
+            <p>
+              Análisis de variables regulatorias, sectoriales y operativas para reforzar
+              decisiones en contextos sensibles.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section section-soft" id="proyectos-destacados">
       <div class="container">
-        <div class="section-intro">
+        <div class="section-heading">
+          <p class="section-kicker">Selección principal</p>
           <h2>Proyectos destacados</h2>
           <p>
-            Estos proyectos representan las líneas más relevantes del portfolio y muestran un
-            enfoque orientado a resolver problemas reales con herramientas accesibles,
-            documentación clara y valor profesional visible.
+            Estos proyectos representan las líneas de mayor valor dentro del portfolio y resumen
+            una propuesta profesional basada en utilidad, estructura y aplicación real.
           </p>
         </div>
 
         <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-card-header">
+          <article class="project-card featured reveal">
+            <div class="project-top">
               <span class="project-area">Comercio internacional y análisis estratégico</span>
               <span class="project-status status-dev">Prioritario / En desarrollo</span>
             </div>
+
             <h3>Evaluador de Riesgo País para Exportación</h3>
-            <p>
-              Proyecto orientado a evaluar riesgos país, riesgos sectoriales y variables críticas
-              para operaciones de exportación, con apoyo a decisiones tipo Go, No-Go o Go condicionado.
+
+            <p class="project-text">
+              Herramienta orientada a evaluar riesgos país, riesgos sectoriales y variables
+              críticas para operaciones de exportación, con apoyo a decisiones tipo Go,
+              No-Go o Go condicionado.
             </p>
+
             <ul class="project-points">
               <li><strong>Objetivo:</strong> apoyar decisiones de internacionalización con análisis estructurado.</li>
               <li><strong>Qué resuelve:</strong> ordena variables regulatorias, geopolíticas, logísticas y comerciales.</li>
               <li><strong>Valor profesional:</strong> demuestra capacidad analítica, visión consultiva y aplicación real de IA.</li>
             </ul>
+
             <div class="project-meta">
-              <span>Enfoque: análisis estratégico</span>
-              <span>Tipo: informe + asistente</span>
+              <span>Análisis estratégico</span>
+              <span>Informe + asistente</span>
+              <span>Riesgo país</span>
             </div>
+
             <div class="project-actions">
               <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver repositorio</a>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-card-header">
+          <article class="project-card reveal">
+            <div class="project-top">
               <span class="project-area">Automatización documental e IA aplicada</span>
               <span class="project-status status-dev">Prioritario / En desarrollo</span>
             </div>
+
             <h3>Asistente de Análisis Documental con IA</h3>
-            <p>
-              Solución orientada a resumir, clasificar, estructurar y extraer información útil de
-              documentos para acelerar revisión, análisis y apoyo a procesos de trabajo.
+
+            <p class="project-text">
+              Solución orientada a resumir, clasificar, estructurar y extraer información útil
+              de documentos para acelerar revisión, análisis y apoyo a procesos de trabajo.
             </p>
+
             <ul class="project-points">
               <li><strong>Objetivo:</strong> reducir tiempo de lectura y mejorar el tratamiento documental.</li>
               <li><strong>Qué resuelve:</strong> facilita trabajar con documentación extensa, técnica o administrativa.</li>
               <li><strong>Valor profesional:</strong> muestra una aplicación empresarial directa y escalable de la IA.</li>
             </ul>
+
             <div class="project-meta">
-              <span>Enfoque: extracción y síntesis</span>
-              <span>Tipo: asistente práctico</span>
+              <span>Extracción y síntesis</span>
+              <span>Asistente práctico</span>
+              <span>Productividad</span>
             </div>
+
             <div class="project-actions">
               <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver repositorio</a>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-card-header">
+          <article class="project-card reveal">
+            <div class="project-top">
               <span class="project-area">Formación y docencia</span>
               <span class="project-status status-live">Activo</span>
             </div>
+
             <h3>Sistema de Formación en IA Aplicada</h3>
-            <p>
+
+            <p class="project-text">
               Proyecto centrado en el diseño de materiales, itinerarios, recursos y apoyos
               formativos para enseñar inteligencia artificial aplicada de forma clara, útil y estructurada.
             </p>
+
             <ul class="project-points">
               <li><strong>Objetivo:</strong> trasladar conocimiento complejo a formatos didácticos y accionables.</li>
               <li><strong>Qué resuelve:</strong> mejora la enseñanza y la capacitación profesional en IA.</li>
               <li><strong>Valor profesional:</strong> refuerza un perfil híbrido entre técnica, docencia y consultoría.</li>
             </ul>
+
             <div class="project-meta">
-              <span>Enfoque: diseño pedagógico</span>
-              <span>Tipo: recursos y contenidos</span>
+              <span>Diseño pedagógico</span>
+              <span>Recursos y contenidos</span>
+              <span>Capacitación</span>
             </div>
+
             <div class="project-actions">
               <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver repositorio</a>
             </div>
@@ -153,104 +246,103 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="container">
-        <div class="section-intro">
+        <div class="section-heading">
+          <p class="section-kicker">Siguientes líneas</p>
           <h2>Portfolio en expansión</h2>
           <p>
-            Además de los proyectos principales, el portfolio incorpora nuevas líneas en desarrollo
-            para reforzar visualización, regulación, análisis sectorial y asistentes especializados.
+            Además del núcleo principal, el portfolio incorpora nuevas iniciativas para reforzar
+            la parte visual, regulatoria, sectorial y el diseño de asistentes especializados.
           </p>
         </div>
 
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-card-header">
+        <div class="projects-grid secondary-grid">
+          <article class="project-card compact reveal">
+            <div class="project-top">
               <span class="project-area">Regulación, compliance y estrategia</span>
               <span class="project-status status-plan">Planificado</span>
             </div>
+
             <h3>Analizador de Riesgos Regulatorios y Sectoriales</h3>
-            <p>
+            <p class="project-text">
               Solución enfocada en identificar riesgos normativos, sectoriales y operativos antes de
               iniciar decisiones de expansión, entrada en mercado o evaluación de viabilidad.
             </p>
-            <ul class="project-points">
-              <li><strong>Objetivo:</strong> anticipar barreras y condicionantes regulatorios.</li>
-              <li><strong>Qué resuelve:</strong> reduce incertidumbre en decisiones sensibles.</li>
-              <li><strong>Valor profesional:</strong> proyecta rigor analítico y utilidad estratégica.</li>
-            </ul>
+
             <div class="project-meta">
-              <span>Enfoque: análisis regulatorio</span>
-              <span>Tipo: evaluación de contexto</span>
+              <span>Análisis regulatorio</span>
+              <span>Evaluación de contexto</span>
             </div>
+
             <div class="project-actions">
-              <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver línea de trabajo</a>
+              <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Ver línea de trabajo</a>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-card-header">
+          <article class="project-card compact reveal">
+            <div class="project-top">
               <span class="project-area">Analítica y visualización</span>
               <span class="project-status status-plan">Planificado</span>
             </div>
+
             <h3>Dashboard de IA Aplicada para Indicadores de Negocio</h3>
-            <p>
-              Panel orientado a convertir datos en información visual útil para seguimiento de
-              métricas, priorización y apoyo a decisiones operativas o estratégicas.
+            <p class="project-text">
+              Panel orientado a convertir datos en información visual útil para seguimiento de métricas,
+              priorización y apoyo a decisiones operativas o estratégicas.
             </p>
-            <ul class="project-points">
-              <li><strong>Objetivo:</strong> hacer visible información relevante de manera comprensible.</li>
-              <li><strong>Qué resuelve:</strong> mejora lectura de indicadores y seguimiento.</li>
-              <li><strong>Valor profesional:</strong> demuestra capacidad de unir datos, análisis y presentación útil.</li>
-            </ul>
+
             <div class="project-meta">
-              <span>Enfoque: dashboard y métricas</span>
-              <span>Tipo: visualización</span>
+              <span>Dashboard</span>
+              <span>Métricas de negocio</span>
             </div>
+
             <div class="project-actions">
-              <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver línea de trabajo</a>
+              <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Ver línea de trabajo</a>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-card-header">
+          <article class="project-card compact reveal">
+            <div class="project-top">
               <span class="project-area">Agentes y asistentes especializados</span>
               <span class="project-status status-plan">Escalable / En definición</span>
             </div>
+
             <h3>Asistente Experto por Dominio</h3>
-            <p>
-              Asistente diseñado para operar en dominios concretos como exportación, análisis
-              documental, formación o evaluación sectorial, con respuestas estructuradas y útiles.
+            <p class="project-text">
+              Asistente diseñado para operar en dominios concretos como exportación, análisis documental,
+              formación o evaluación sectorial, con respuestas estructuradas y útiles.
             </p>
-            <ul class="project-points">
-              <li><strong>Objetivo:</strong> concentrar conocimiento práctico en herramientas especializadas.</li>
-              <li><strong>Qué resuelve:</strong> facilita apoyo experto en tareas concretas.</li>
-              <li><strong>Valor profesional:</strong> demuestra diseño de prompts, estructura y reutilización.</li>
-            </ul>
+
             <div class="project-meta">
-              <span>Enfoque: asistencia experta</span>
-              <span>Tipo: agente especializado</span>
+              <span>Asistencia experta</span>
+              <span>Agente especializado</span>
             </div>
+
             <div class="project-actions">
-              <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver línea de trabajo</a>
+              <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Ver línea de trabajo</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section section-soft reveal">
       <div class="container">
         <div class="cta-box">
-          <h2>Un portfolio en construcción continua</h2>
-          <p>
-            Este portfolio evoluciona de forma progresiva con nuevos proyectos, mejoras técnicas,
-            documentación y casos de uso orientados a aportar valor real. La web pública actúa como
-            escaparate profesional y GitHub como base de trabajo y evidencia.
-          </p>
+          <div class="cta-copy">
+            <p class="section-kicker">Cierre</p>
+            <h2>Un portfolio diseñado para crecer con evidencia</h2>
+            <p>
+              La web pública actúa como escaparate profesional y GitHub como base de trabajo,
+              evolución técnica y documentación. Cada proyecto busca demostrar criterio, aplicación
+              real y capacidad para convertir conocimiento en soluciones visibles.
+            </p>
+          </div>
+
           <div class="cta-actions">
-            <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver GitHub</a>
-            <a href="contacto.html" class="btn btn-outline">Contactar</a>
+            <a href="https://github.com/chema74/PORTFOLIO_IA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Explorar GitHub</a>
+            <a href="contacto.html" class="btn btn-secondary">Contactar</a>
           </div>
         </div>
       </div>
@@ -258,11 +350,19 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-content">
-      <p>&copy; 2026 José María · Portfolio IA Aplicada</p>
-      <p>IA aplicada | formación | análisis | automatización</p>
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Portfolio IA Aplicada</p>
+        <p>&copy; <span id="current-year"></span> José María</p>
+      </div>
+
+      <div>
+        <p>IA aplicada · análisis · formación · automatización</p>
+      </div>
     </div>
   </footer>
+
+  <button id="back-to-top" aria-label="Volver arriba">↑</button>
 
   <script src="main.js"></script>
 </body>
