@@ -3,26 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Perfil profesional de José María. IA aplicada, formación, análisis estratégico, comercio internacional y automatización." />
+  <meta name="author" content="José María" />
   <title>Sobre mí | Portfolio IA Aplicada</title>
-  <meta name="description" content="Perfil profesional y trayectoria del portfolio de IA aplicada." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">IA</span>
+        <span class="logo-text">Portfolio IA Aplicada</span>
+      </a>
 
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <h1>Portfolio IA Aplicada</h1>
-        <p class="brand-subtitle">Formación, Riesgo y Soluciones Inteligentes</p>
-      </div>
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <nav class="main-nav">
+      <nav class="main-nav" id="main-nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="proyectos.html">Proyectos</a></li>
           <li><a href="formacion-docencia.html">Formación y docencia</a></li>
-          <li><a href="comercio-analisis.html">Comercio internacional y análisis</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="comercio-analisis.html">Comercio y análisis</a></li>
+          <li><a href="sobre-mi.html" class="active">Sobre mí</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
@@ -31,100 +43,239 @@
 
   <main>
     <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Perfil profesional</p>
-        <h2>Un perfil híbrido entre docencia, consultoría, análisis y tecnología aplicada.</h2>
-        <p class="hero-text">
-          Este portfolio nace de una trayectoria profesional construida en la intersección entre formación,
-          análisis internacional, consultoría y tecnología. El objetivo es transformar esa experiencia en
-          proyectos visibles de IA aplicada, con utilidad real y orientación profesional.
-        </p>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Perfil profesional</p>
+          <h1>Una trayectoria orientada a aplicar la IA con criterio y utilidad</h1>
+          <p class="lead">
+            Mi trabajo se sitúa en la intersección entre inteligencia artificial aplicada,
+            análisis estratégico, formación y transferencia de conocimiento. Este portfolio
+            refleja una forma de trabajar orientada a convertir información, experiencia y
+            tecnología en soluciones visibles y útiles.
+          </p>
+
+          <div class="hero-actions">
+            <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
+            <a href="contacto.html" class="btn btn-secondary">Contactar</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="glass-card">
+            <p class="mini-title">Resumen</p>
+            <div class="tag-list">
+              <span class="tag">IA aplicada</span>
+              <span class="tag">Docencia</span>
+              <span class="tag">Automatización</span>
+              <span class="tag">Comercio internacional</span>
+              <span class="tag">Riesgo y análisis</span>
+              <span class="tag">Documentación</span>
+              <span class="tag">Consultoría</span>
+              <span class="tag">Portfolio profesional</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="intro">
+    <section class="section reveal">
       <div class="container">
-        <h3>Quién soy</h3>
-        <p>
-          Mi trayectoria combina experiencia en docencia, formación, consultoría, sistemas y análisis
-          aplicado a distintos entornos organizativos. A lo largo de los años he trabajado en contextos
-          vinculados a la enseñanza, el acompañamiento profesional, la tecnología y la gestión del conocimiento.
-        </p>
-        <p>
-          En la actualidad, estoy orientando esa experiencia hacia la construcción de soluciones de IA aplicada,
-          asistentes expertos, recursos formativos y herramientas de apoyo a la decisión, con un foco especial
-          en comercio internacional, riesgo país, documentación compleja y formación.
-        </p>
-      </div>
-    </section>
+        <div class="section-heading">
+          <p class="section-kicker">Quién soy</p>
+          <h2>Un perfil híbrido entre tecnología, análisis y docencia</h2>
+          <p>
+            He orientado mi desarrollo profesional a construir una propuesta de valor basada
+            en la aplicación práctica de la inteligencia artificial, la estructuración de
+            conocimiento y el análisis de contextos complejos. Mi enfoque combina visión
+            técnica, capacidad pedagógica y orientación a utilidad real.
+          </p>
+        </div>
 
-    <section class="value-blocks">
-      <div class="container">
-        <h3>Qué aporta este perfil</h3>
-
-        <div class="cards">
-          <article class="card">
-            <h4>Docencia y formación</h4>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>IA aplicada</h3>
             <p>
-              Capacidad para diseñar programas, estructurar contenidos, acompañar aprendizaje y convertir
-              conocimiento complejo en materiales útiles y enseñables.
+              Diseño proyectos y soluciones con foco en resolver necesidades concretas mediante
+              automatización, asistentes, análisis y estructuración de información.
             </p>
           </article>
 
-          <article class="card">
-            <h4>Consultoría y análisis</h4>
+          <article class="info-card">
+            <h3>Docencia y formación</h3>
             <p>
-              Capacidad para diagnosticar problemas, ordenar información, traducir necesidades y construir
-              marcos de trabajo aplicables a organizaciones y contextos reales.
+              Desarrollo contenidos y recursos para explicar la IA de forma clara, útil y
+              orientada a resultados formativos y profesionales.
             </p>
           </article>
 
-          <article class="card">
-            <h4>Tecnología aplicada</h4>
+          <article class="info-card">
+            <h3>Análisis estratégico</h3>
             <p>
-              Capacidad para materializar ideas en soluciones concretas mediante herramientas de IA,
-              análisis documental, visualización de datos y automatización funcional.
+              Trabajo con variables de riesgo, contexto, regulación y mercado para apoyar
+              lectura de entorno y toma de decisiones.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Enfoque práctico</h3>
+            <p>
+              El portfolio está pensado como evidencia de trabajo: proyectos visibles,
+              estructura clara y evolución continua.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="section section-soft reveal">
       <div class="container">
-        <h3>Por qué este portfolio</h3>
-        <p>
-          Este portfolio no está concebido como una colección de pruebas aisladas ni como un simple repositorio
-          técnico. Está planteado como un activo profesional que permite mostrar una forma de trabajar: identificar
-          un problema, estructurarlo, diseñar una solución y explicarla con claridad.
-        </p>
-        <p>
-          La finalidad es construir una base sólida de proyectos que reflejen una forma de entender la IA no como
-          un fin en sí mismo, sino como un medio para analizar mejor, enseñar mejor, documentar mejor y apoyar
-          decisiones con mayor criterio.
-        </p>
+        <div class="section-heading">
+          <p class="section-kicker">Enfoque de trabajo</p>
+          <h2>Cómo entiendo la inteligencia artificial aplicada</h2>
+          <p>
+            No concibo la IA como una capa superficial, sino como una herramienta que debe
+            integrarse con criterio dentro de procesos reales. Por eso, el foco de este
+            portfolio no está solo en la tecnología, sino en su capacidad para ordenar,
+            simplificar, analizar y aportar valor.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card compact">
+            <div class="project-top">
+              <span class="project-area">Criterio</span>
+            </div>
+            <h3>Resolver antes que impresionar</h3>
+            <p class="project-text">
+              Cada proyecto parte de una necesidad concreta: analizar mejor, automatizar una
+              tarea, enseñar con claridad o apoyar una decisión con más estructura.
+            </p>
+          </article>
+
+          <article class="project-card compact">
+            <div class="project-top">
+              <span class="project-area">Transferencia</span>
+            </div>
+            <h3>Convertir conocimiento en herramientas útiles</h3>
+            <p class="project-text">
+              Me interesa traducir experiencia, información y metodología en recursos
+              reutilizables, comprensibles y orientados a aplicación práctica.
+            </p>
+          </article>
+
+          <article class="project-card compact">
+            <div class="project-top">
+              <span class="project-area">Evidencia</span>
+            </div>
+            <h3>Mostrar trabajo real de forma visible</h3>
+            <p class="project-text">
+              La combinación entre web pública y GitHub permite que la propuesta profesional
+              no dependa solo de una descripción, sino de ejemplos concretos.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="specialization">
+    <section class="section reveal">
       <div class="container">
-        <h3>Áreas de especial interés</h3>
-        <ul class="feature-list">
-          <li>IA aplicada a formación, docencia y capacitación ejecutiva.</li>
-          <li>Riesgo país, análisis estratégico e inteligencia de mercados.</li>
-          <li>Documentación compleja, normativa, licitaciones y recuperación semántica.</li>
-          <li>Herramientas de apoyo a la decisión y transformación de conocimiento experto en soluciones útiles.</li>
-        </ul>
+        <div class="section-heading">
+          <p class="section-kicker">Especialización</p>
+          <h2>Áreas en las que concentro mi trabajo</h2>
+          <p>
+            Este portfolio se apoya en varias líneas que, juntas, construyen una propuesta
+            profesional diferencial y coherente.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-area">Automatización y documentación</span>
+            </div>
+            <h3>Procesos, análisis documental y asistentes</h3>
+            <p class="project-text">
+              Desarrollo soluciones orientadas a resumir, clasificar, estructurar y reutilizar
+              información en contextos de trabajo reales.
+            </p>
+            <div class="project-meta">
+              <span>Productividad</span>
+              <span>Asistentes</span>
+              <span>Información estructurada</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-area">Formación y transferencia</span>
+            </div>
+            <h3>Recursos para enseñar IA aplicada</h3>
+            <p class="project-text">
+              Diseño itinerarios, materiales y marcos explicativos para trasladar conceptos
+              complejos a formatos claros y útiles.
+            </p>
+            <div class="project-meta">
+              <span>Didáctica</span>
+              <span>Contenidos</span>
+              <span>Capacitación</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-area">Comercio y análisis estratégico</span>
+            </div>
+            <h3>Evaluación de contexto, mercado y riesgo</h3>
+            <p class="project-text">
+              Integro variables de entorno, comercio internacional y análisis estructurado
+              en soluciones orientadas a apoyar lectura y decisión.
+            </p>
+            <div class="project-meta">
+              <span>Riesgo país</span>
+              <span>Mercados</span>
+              <span>Decisión</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft reveal">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-copy">
+            <p class="section-kicker">Cierre</p>
+            <h2>Una propuesta profesional en construcción continua</h2>
+            <p>
+              Este portfolio no es un catálogo cerrado, sino una base de trabajo viva. La idea
+              es seguir ampliando proyectos, mejorando documentación y consolidando una línea
+              propia de IA aplicada, análisis y formación con visibilidad profesional.
+            </p>
+          </div>
+
+          <div class="cta-actions">
+            <a href="proyectos.html" class="btn btn-primary">Explorar portfolio</a>
+            <a href="contacto.html" class="btn btn-secondary">Escribir mensaje</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 — Portfolio IA Aplicada. Formación, Riesgo y Soluciones Inteligentes.</p>
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Portfolio IA Aplicada</p>
+        <p>&copy; <span id="current-year"></span> José María</p>
+      </div>
+      <div>
+        <p>IA aplicada · análisis · formación · automatización</p>
+      </div>
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <button id="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <script src="main.js"></script>
 </body>
 </html>
