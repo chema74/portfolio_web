@@ -1,11 +1,78 @@
-/* =========================
-   PÁGINA PROYECTOS
-========================= */
+/* =========================================================
+   1. RESET BÁSICO Y BASE GLOBAL
+========================================================= */
 
-.page-hero {
-  padding: 5rem 0 3rem;
-  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
-  border-bottom: 1px solid #e6ecf2;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0f172a;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   2. TIPOGRAFÍA GENERAL
+========================================================= */
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.85rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #475569;
+}
+
+.lead {
+  max-width: 820px;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: #475569;
 }
 
 .eyebrow {
@@ -18,19 +85,67 @@
   color: #2563eb;
 }
 
-.page-hero h1 {
-  margin: 0 0 1rem;
-  font-size: 2.4rem;
-  line-height: 1.15;
+/* =========================================================
+   3. HEADER Y NAVEGACIÓN
+========================================================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 800;
   color: #0f172a;
 }
 
-.lead {
-  max-width: 800px;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #475569;
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1rem;
 }
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #334155;
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #2563eb;
+}
+
+.menu-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+/* =========================================================
+   4. SECCIONES GENERALES
+========================================================= */
 
 .section {
   padding: 4rem 0;
@@ -41,21 +156,112 @@
 }
 
 .section-intro {
-  max-width: 850px;
+  max-width: 860px;
   margin-bottom: 2rem;
 }
 
-.section-intro h2 {
-  margin-bottom: 0.8rem;
-  font-size: 1.8rem;
+.section-intro p {
+  max-width: 800px;
+}
+
+/* =========================================================
+   5. HERO / CABECERAS DE PÁGINA
+========================================================= */
+
+.hero,
+.page-hero {
+  padding: 5rem 0 3rem;
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  border-bottom: 1px solid #e6ecf2;
+}
+
+.hero-content,
+.page-hero-content {
+  max-width: 900px;
+}
+
+.hero-actions,
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+/* =========================================================
+   6. BOTONES
+========================================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.15rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #e2e8f0;
   color: #0f172a;
 }
 
-.section-intro p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #475569;
+.btn-secondary:hover {
+  background-color: #cbd5e1;
 }
+
+.btn-outline {
+  background-color: transparent;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+.btn-outline:hover {
+  background-color: #f8fafc;
+}
+
+/* =========================================================
+   7. TARJETAS GENERALES
+========================================================= */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.card h3 {
+  margin-bottom: 0.8rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   8. TAGS / ETIQUETAS
+========================================================= */
 
 .tag-list {
   display: flex;
@@ -73,6 +279,10 @@
   font-size: 0.92rem;
   font-weight: 600;
 }
+
+/* =========================================================
+   9. PROYECTOS
+========================================================= */
 
 .projects-grid {
   display: grid;
@@ -143,13 +353,6 @@
   margin: 0 0 1rem;
   font-size: 1.3rem;
   line-height: 1.35;
-  color: #0f172a;
-}
-
-.project-card p {
-  margin-bottom: 1rem;
-  line-height: 1.7;
-  color: #475569;
 }
 
 .project-points {
@@ -187,45 +390,9 @@
   flex-wrap: wrap;
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.78rem 1.15rem;
-  border-radius: 12px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
-}
-
-.btn-primary {
-  background-color: #2563eb;
-  color: #ffffff;
-}
-
-.btn-primary:hover {
-  background-color: #1d4ed8;
-}
-
-.btn-secondary {
-  background-color: #e2e8f0;
-  color: #0f172a;
-}
-
-.btn-secondary:hover {
-  background-color: #cbd5e1;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border-color: #cbd5e1;
-  color: #0f172a;
-}
-
-.btn-outline:hover {
-  background-color: #f8fafc;
-}
+/* =========================================================
+   10. BLOQUES DESTACADOS / CTA
+========================================================= */
 
 .cta-box {
   padding: 2rem;
@@ -236,83 +403,75 @@
 }
 
 .cta-box h2 {
-  margin-top: 0;
   margin-bottom: 1rem;
-  color: #0f172a;
 }
 
 .cta-box p {
   margin-bottom: 1.5rem;
-  line-height: 1.7;
-  color: #475569;
 }
 
-.cta-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-}
+/* =========================================================
+   11. LISTAS DE CONTENIDO
+========================================================= */
 
-/* =========================
-   AJUSTES BASE ÚTILES
-========================= */
-
-.container {
-  width: min(1120px, 92%);
-  margin: 0 auto;
-}
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background-color: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.header-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem 0;
-}
-
-.logo {
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: #0f172a;
-  text-decoration: none;
-}
-
-.main-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0 0 1rem;
-}
-
-.main-nav a {
-  text-decoration: none;
+.content-list {
+  padding-left: 1.2rem;
   color: #334155;
+}
+
+.content-list li {
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   12. FORMULARIOS / CONTACTO
+========================================================= */
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 720px;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.45rem;
+}
+
+label {
   font-weight: 600;
+  color: #334155;
 }
 
-.main-nav a:hover,
-.main-nav a.active {
-  color: #2563eb;
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font: inherit;
+  color: #0f172a;
+  background-color: #ffffff;
 }
 
-.menu-toggle {
-  display: none;
-  border: none;
-  background: transparent;
-  font-size: 1.5rem;
-  cursor: pointer;
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* =========================================================
+   13. FOOTER
+========================================================= */
 
 .site-footer {
   padding: 2rem 0;
@@ -333,23 +492,84 @@
   font-size: 0.95rem;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* =========================================================
+   14. ANIMACIONES SUAVES OPCIONALES
+========================================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================================
+   15. BOTÓN VOLVER ARRIBA OPCIONAL
+========================================================= */
+
+#back-to-top {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 999px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* =========================================================
+   16. RESPONSIVE
+========================================================= */
 
 @media (max-width: 980px) {
-  .projects-grid {
+  .projects-grid,
+  .card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .page-hero h1 {
-    font-size: 2rem;
+  h1 {
+    font-size: 2.15rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
   }
 }
 
 @media (max-width: 720px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .main-nav {
+    display: none;
+    width: 100%;
+  }
+
+  .main-nav.open {
+    display: block;
   }
 
   .main-nav ul {
@@ -358,31 +578,40 @@
     padding: 1rem 0 0;
   }
 
-  .menu-toggle {
-    display: inline-block;
-  }
-
+  .hero,
   .page-hero {
     padding: 4rem 0 2.5rem;
-  }
-
-  .page-hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .lead {
-    font-size: 1rem;
   }
 
   .section {
     padding: 3rem 0;
   }
 
-  .project-card {
+  .projects-grid,
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .project-card,
+  .card,
+  .cta-box {
     padding: 1.25rem;
   }
 
-  .cta-box {
-    padding: 1.5rem;
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
