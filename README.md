@@ -21,7 +21,7 @@ La web principal incluye las siguientes páginas:
 - `sobre-mi.html` — perfil profesional y trayectoria
 - `contacto.html` — página de contacto y estado del portfolio
 
-## Proyectos principales del portfolio
+## Proyectos principales del portfolio 
 
 - **AI Readiness & Strategy Hub**  
   Diagnóstico, madurez y hoja de ruta para adopción de IA.
